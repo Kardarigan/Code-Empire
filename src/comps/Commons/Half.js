@@ -9,10 +9,20 @@ const Half = ({ thing, reverse = false }) => {
           : "md:flex-row flex-col-reverse"
       }`}
     >
-      <div className="md:w-1/2 flex-fullcenter">
-        <div dir="rtl">
-          <h1 className="title font-bold">{thing.title}</h1>
-          <p className="max-md:text-sm my-5 text-justify">{thing.describe}</p>
+      <div className="md:w-1/2 flex-fullcenter z-10">
+        <div dir={reverse ? "ltr" : "rtl"}>
+          <h1 className="title-super font-bold relative">
+            <span
+              className={`absolute ${
+                reverse ? "translate-x-[-47%]" : "translate-x-[47%]"
+              } translate-y-[-120%] w-[200%]`}
+            >
+              {thing.title}
+            </span>
+          </h1>
+          <p className="max-md:text-sm my-5 text-justify max-w-[500px]">
+            {thing.describe}
+          </p>
           <Button to="/" label="شروع همکاری" />
         </div>
       </div>
@@ -32,10 +42,19 @@ const Half = ({ thing, reverse = false }) => {
             <img
               src={thing.cover}
               alt={thing.title}
-              className="w-full bg-fullobject"
+              className="w-full bg-fullobject ghost"
             />
           )}
         </div>
+        {thing.overIcon && (
+          <span
+            className={`absolute ${
+              reverse ? "translate-x-[20%]" : "translate-x-[500%]"
+            } translate-y-[-150%] md:text-9xl hover:rotate-180 transition-all`}
+          >
+            {thing.overIcon}
+          </span>
+        )}
       </div>
     </section>
   );

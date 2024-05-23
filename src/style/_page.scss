@@ -1,0 +1,13 @@
+.ghost {
+  animation: ghostRase 5s linear 2s infinite alternate;
+
+  @keyframes ghostRase {
+    from {
+      transform: translateY(0);
+    }
+
+    to {
+      transform: translateY(-10px);
+    }
+  }
+}

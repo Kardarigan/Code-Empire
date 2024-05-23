@@ -1,4 +1,5 @@
-import Less_Code from "./assets/Less_Code.png";
+import Persian_Programmer from "./assets/painting_of_an_ancient_Persian_with_sassanid_helmet_soldier_while_his_coding_in_his_laptop_png.png";
+import Persians_Parade from "./assets/persians_parade.jpg";
 
 export const navLinks = [
   {
@@ -81,5 +82,14 @@ export const lessCode = {
   title: "کمترین کد همیشه بهترین نتیجه رو داره!",
   describe:
     "همیشه بهترین سایت یا برنامه، اونیه که کمترین و بهینه ترین کد رو داشته باشه. پروژه ای که به دست برنامه نویسان امپراتوری کد ساخته میشه به طور کاملا آشکاری از کمترین و بهینه ترین کد ها در هر زمینه ای استفاده میکنه با این روش که قابل استفاده ترین کد ممکن نوشته میشه. ما در آموزش هامونم به همین شکل به شما برنامه نویسی رو یاد میدیم. همین روشه کد امپایر رو متمایز میکنه!",
-  icon: "fa-light fa-compress",
+  cover: Persian_Programmer,
+  overIcon: "#",
+};
+
+export const whatWeAre = {
+  title: "این امپراتوری دقیقا چیه؟",
+  describe:
+    "امپراتوری کد یک تیم بسیار منسجم و قدرتمنده که میخواد تمام دنیای وبسایت ها و اپ هارو تصرف کنه و دگرگونی اساسی ای توش انجام بده. تمام سربازان امپراتوری برای این حقیقت که طراحی و کد زدن رو به بهترین سطح برسونن تا دیگه هیچ کس بجر کد های تمیز، طراحی های دلنواز و زیبا و برنامه هایی با کاربری بسیار راحت و سبک نتونه تو دنیا پیدا کنه!",
+  cover: Persians_Parade,
+  overIcon: "#",
 };
