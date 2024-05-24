@@ -1,5 +1,3 @@
-import React from "react";
-
 const Checkbox = ({ label, id, className = false }) => {
   return (
     <label for={id} className="checkWrapp flex items-center relative">

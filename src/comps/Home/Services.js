@@ -11,7 +11,7 @@ const Services = () => {
             <div className="flex-fullcenter">
               <Link
                 to="/"
-                className="size-full bg-blue-600 border-4 border-slate-100 transition-all duration-300 rounded-3xl backdrop-blur hover:scale-105 flex flex-col justify-between overflow-hidden group"
+                className="size-full bg-blue-500 border-4 border-slate-100 transition-all duration-300 rounded-3xl backdrop-blur hover:scale-105 flex flex-col justify-between overflow-hidden group"
               >
                 <div className={`p-5 relative transition-all`}>
                   <div className="md:text-3xl md:my-5 flex items-center transition-all md:group-hover:text-xl md:group-hover:my-0">
@@ -24,9 +24,9 @@ const Services = () => {
                 </div>
                 <Link
                   to="#"
-                  class="relative border-t-4 border-slate-100 inline-flex items-center justify-start py-3 pl-4 pr-12 font-bold text-blue-600 transition-all hover:pl-10 hover:pr-6 bg-slate-100 group/lets"
+                  class="relative border-t-4 border-slate-100 inline-flex items-center justify-start py-3 pl-4 pr-12 font-bold text-blue-500 transition-all hover:pl-10 hover:pr-6 bg-slate-100 group/lets"
                 >
-                  <span class="absolute bottom-0 left-0 w-full h-0 transition-all duration-150 ease-in-out bg-blue-600 group-hover/lets:h-full"></span>
+                  <span class="absolute bottom-0 left-0 w-full h-0 transition-all duration-150 ease-in-out bg-blue-500 group-hover/lets:h-full"></span>
                   <span class="absolute text-slate-950 right-0 pr-4 duration-200 ease-out group-hover/lets:translate-x-12">
                     <i className="fal fa-chevron-right" />
                   </span>

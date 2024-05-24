@@ -1,5 +1,3 @@
-import React from "react";
-
 const Field = ({
   id = false,
   number = false,

@@ -1,5 +1,3 @@
-import React from "react";
-
 const Fadein = (props) => {
   const [isVisible, setVisible] = React.useState(true);
   const domRef = React.useRef();

@@ -15,9 +15,9 @@ $color_dark: #171a20;
 body {
   background: linear-gradient(
     109.6deg,
-    rgb(36, 45, 57) 11.2%,
+    #030d20 11.2%,
     rgb(16, 37, 60) 51.2%,
-    rgb(0, 0, 0) 98.6%
+    #030d20 98.6%
   );
 }
 
@@ -42,6 +42,14 @@ body {
 .allunset {
   all: unset !important;
 }
+.halfbg-right {
+  background: linear-gradient(109.6deg, transparent 20%, #874ccc 98%);
+}
+
+.halfbg-left {
+  background: linear-gradient(109deg, #874ccc 20%, transparent 70%);
+}
+
 .shadowAround {
   box-shadow: inset 0px 0px 30px 30px rgba(black, 0.9);
 }
