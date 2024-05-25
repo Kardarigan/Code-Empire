@@ -13,8 +13,8 @@ const Half = ({ thing, reverse = false }) => {
             <span
               className={`absolute max-md:text-slate-50 ${
                 reverse
-                  ? "md:translate-x-[-25%] halfbg-left pl-5"
-                  : "md:translate-x-[25%] halfbg-right pr-5"
+                  ? "md:translate-x-[-31%] halfbg-left pl-5"
+                  : "md:translate-x-[31%] halfbg-right pr-5"
               } translate-y-[-150%] md:w-[150%] rounded-full`}
             >
               {thing.title}

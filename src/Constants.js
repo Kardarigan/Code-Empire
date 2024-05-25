@@ -3,32 +3,27 @@ import Persians_Parade from "./assets/persians_parade.jpg";
 
 export const navLinks = [
   {
-    href: "./vehicles",
+    href: "/about",
     label: "درباره",
     icon: "",
   },
   {
-    href: "./energy",
+    target: "/#services",
     label: "خدمات",
     icon: "",
   },
   {
-    href: "./charging",
-    label: "مهارت",
-    icon: "",
-  },
-  {
-    href: "./discover",
+    href: "/methods",
     label: "روش ها",
     icon: "",
   },
 ];
 
 export const footLinks = [
-  { href: "./privacy", label: "قوانین" },
-  { href: "./blog", label: "بلاگ" },
-  { href: "./contact", label: "ارتباط باما" },
-  { href: "./about", label: "Code Empire © 2024" },
+  { href: "/privacy", label: "قوانین" },
+  { href: "/blog", label: "بلاگ" },
+  { href: "/contact", label: "ارتباط باما" },
+  { href: "/about", label: "Code Empire © 2024" },
 ];
 
 export const socialButtons = [

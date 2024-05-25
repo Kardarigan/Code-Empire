@@ -27,10 +27,17 @@ const Navbar = () => {
             {navLinks.map((item, index) => {
               return (
                 <li key={index}>
-                  <Link to={item.href} className={`navitem`}>
-                    <i className={item.icon} />
-                    <span>{item.label}</span>
-                  </Link>
+                  {item.target ? (
+                    <a href={item.target} className={`navitem`}>
+                      <i className={item.icon} />
+                      <span>{item.label}</span>
+                    </a>
+                  ) : (
+                    <Link to={item.href} className={`navitem`}>
+                      <i className={item.icon} />
+                      <span>{item.label}</span>
+                    </Link>
+                  )}
                 </li>
               );
             })}

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Overall = ({ thing, light = false }) => {
   return (
     <section
-      className={`min-h-[50vh] max-h-screen padding-x pt-52 pb-60 text-center ${
+      className={`h-screen padding-x pb-24 text-center flex flex-col justify-center ${
         light ? "bg-slate-50" : "bg-slate-950"
       }`}
       dir="rtl"
@@ -18,7 +18,7 @@ const Overall = ({ thing, light = false }) => {
       >
         {thing.describe}
       </p>
-      <div className="md:inline-flex flex max-md:flex-col gap-3 mx-auto">
+      <div className="md:inline-flex flex max-md:w-full max-md:flex-col gap-3 mx-auto">
         {thing.links.map((item, index) => {
           return (
             <Link
