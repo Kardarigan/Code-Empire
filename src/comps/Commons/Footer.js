@@ -13,7 +13,7 @@ const Footer = () => {
           );
         })}
       </ul>
-      <ul className="mt-3 pb-3 max-w-32 mx-auto md:w-4/5 grid md:grid-cols-4 grid-cols-2 gap-4">
+      <ul className="mt-3 pb-3 max-w-32 mx-auto md:w-4/5 grid grid-cols-4 gap-4">
         {socialButtons.map((item) => {
           return (
             <li key={item}>

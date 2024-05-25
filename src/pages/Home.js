@@ -1,5 +1,5 @@
-import { Hero, Services, Half, Customers } from "../comps/Portal";
-import { lessCode, whatWeAre } from "../Constants";
+import { Hero, Services, Half, Customers, Overall } from "../comps/Portal";
+import { homeOverall, lessCode, whatWeAre } from "../Constants";
 
 const Home = () => {
   return (
@@ -9,6 +9,7 @@ const Home = () => {
       <Half thing={lessCode} />
       <Half thing={whatWeAre} reverse />
       <Customers />
+      <Overall thing={homeOverall} />
     </>
   );
 };

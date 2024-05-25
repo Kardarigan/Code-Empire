@@ -7,8 +7,10 @@ import Hero from "./Home/Hero";
 import Services from "./Home/Services";
 import Half from "./Commons/Half";
 import Customers from "./Home/Customers";
+import Overall from "./Commons/Overall";
 
 export {
+  Overall,
   Navbar,
   Footer,
   Home,
