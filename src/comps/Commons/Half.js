@@ -11,11 +11,11 @@ const Half = ({ thing, reverse = false }) => {
         <div dir={reverse ? "ltr" : "rtl"}>
           <h1 className="title-super font-bold relative max-md:px-2">
             <span
-              className={`absolute ${
+              className={`absolute max-md:text-slate-50 ${
                 reverse
-                  ? "md:translate-x-[-47%] halfbg-left pl-5"
-                  : "md:translate-x-[47%] halfbg-right pr-5"
-              } translate-y-[-150%] md:w-[200%] rounded-full`}
+                  ? "md:translate-x-[-25%] halfbg-left pl-5"
+                  : "md:translate-x-[25%] halfbg-right pr-5"
+              } translate-y-[-150%] md:w-[150%] rounded-full`}
             >
               {thing.title}
             </span>
@@ -48,8 +48,8 @@ const Half = ({ thing, reverse = false }) => {
         </div>
         {thing.overIcon && (
           <span
-            className={`absolute max-md:hidden ${
-              reverse ? "translate-x-[20%]" : "translate-x-[500%]"
+            className={`absolute max-md:hidden text-purple-500 ${
+              reverse ? "translate-x-[20%]" : "translate-x-[720%]"
             } translate-y-[-150%] md:text-9xl hover:rotate-180 transition-all`}
           >
             {thing.overIcon}

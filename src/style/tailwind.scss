@@ -62,7 +62,7 @@
       @apply md:text-5xl text-2xl font-bold;
     }
     &-super {
-      @apply md:text-7xl text-2xl font-bold;
+      @apply lg:text-7xl md:text-5xl text-2xl font-bold;
     }
   }
   .field {

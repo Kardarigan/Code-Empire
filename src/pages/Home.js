@@ -1,4 +1,4 @@
-import { Hero, Services, Half } from "../comps/Portal";
+import { Hero, Services, Half, Customers } from "../comps/Portal";
 import { lessCode, whatWeAre } from "../Constants";
 
 const Home = () => {
@@ -8,6 +8,7 @@ const Home = () => {
       <Services />
       <Half thing={lessCode} />
       <Half thing={whatWeAre} reverse />
+      <Customers />
     </>
   );
 };

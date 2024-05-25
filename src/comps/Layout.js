@@ -5,7 +5,7 @@ const Layout = () => {
   return (
     <>
       <Navbar />
-      <main className="relative text-slate-50">
+      <main className="relative">
         <Outlet />
       </main>
       <Footer />
