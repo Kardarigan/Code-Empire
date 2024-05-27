@@ -42,7 +42,9 @@ const Navbar = () => {
               );
             })}
           </ul>
-          <Button customClass="max-md:hidden" label="تماس باما" />
+          <Link className="button button-dark max-md:hidden" to="/contact">
+            تماس باما
+          </Link>
           <button
             className="md:hidden block transition text-sm font-semibold rounded px-3 py-2 bg-opacity-25 bg-slate-500 hover:bg-opacity-40 backdrop-blur-sm"
             onClick={hamburgerOn}

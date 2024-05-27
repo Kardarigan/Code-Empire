@@ -155,3 +155,36 @@ export const homeOverall = {
     },
   ],
 };
+
+export const contactForm = [
+  {
+    label: "نام",
+    type: "text",
+    required: true,
+    half: true,
+  },
+  {
+    label: "نام خانوادگی (اختیاری)",
+    type: "text",
+    half: true,
+  },
+  {
+    label: "شماره تماس (اختیاری)",
+    type: "tel",
+  },
+  {
+    label: "ایمیل",
+    type: "email",
+    required: true,
+  },
+  {
+    label: "موضوع پیام",
+    type: "text",
+    required: true,
+  },
+  {
+    label: "متن پیام",
+    type: "textarea",
+    required: true,
+  },
+];

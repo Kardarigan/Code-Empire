@@ -6,7 +6,7 @@ const Services = () => {
     <section className="padding-x py-10" dir="rtl" id="services">
       <h2 className="title-super">
         <span className="text-purple-500"># </span>
-        <span className="halfbg-left pl-5 rounded-full">
+        <span className="halfbg-left rounded-full">
           خدماتی که ما ارایه میدیم
         </span>
       </h2>

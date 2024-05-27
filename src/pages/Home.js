@@ -1,10 +1,10 @@
-import { Hero, Services, Half, Customers, Overall } from "../comps/Portal";
+import { Home_Hero, Services, Half, Customers, Overall } from "../comps/Portal";
 import { homeOverall, lessCode, whatWeAre } from "../Constants";
 
 const Home = () => {
   return (
     <>
-      <Hero />
+      <Home_Hero />
       <Services />
       <Half thing={lessCode} />
       <Half thing={whatWeAre} reverse />

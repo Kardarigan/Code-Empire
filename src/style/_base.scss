@@ -1,5 +1,5 @@
-$color_prime: #f3f4f4;
-$color_second: #4b79a1;
+$color_prime: #10439f;
+$color_second: #d17cd9;
 $color_dark: #171a20;
 
 * {
@@ -7,7 +7,7 @@ $color_dark: #171a20;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: Yekan, Arial, sans-serif;
+  font-family: Yekan, sans-serif;
 }
 
 @font-face {
@@ -42,12 +42,25 @@ body {
 }
 .halfbg-right {
   background: linear-gradient(109.6deg, transparent 20%, #874ccc 98%);
+  @apply pr-5;
 }
 
 .halfbg-left {
   background: linear-gradient(109deg, #874ccc 20%, transparent 70%);
+  @apply pl-5;
 }
-
+.link {
+  @apply transition-all;
+  -webkit-box-shadow: inset 0 -2px 0 0 $color_prime;
+  -moz-box-shadow: inset 0 -2px 0 0 $color_prime;
+  box-shadow: inset 0 -2px 0 0 $color_prime;
+  &:hover {
+    @apply text-slate-50;
+    -webkit-box-shadow: inset 0 -22px 0 0 $color_prime;
+    -moz-box-shadow: inset 0 -22px 0 0 $color_prime;
+    box-shadow: inset 0 -22px 0 0 $color_prime;
+  }
+}
 .shadowAround {
   box-shadow: inset 0px 0px 30px 30px rgba(black, 0.9);
 }
