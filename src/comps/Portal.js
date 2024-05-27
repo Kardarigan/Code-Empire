@@ -12,7 +12,6 @@ import Contact from "../pages/Contact";
 import About from "../pages/About";
 import Blog from "../pages/Blog";
 import Policy from "../pages/Policy";
-import Methods from "../pages/Methods";
 import Hero from "../comps/Commons/Hero";
 import Form from "./Commons/Form";
 import Tip from "./Commons/Tip";
@@ -23,7 +22,6 @@ export {
   About,
   Blog,
   Policy,
-  Methods,
   Contact,
   Overall,
   Navbar,

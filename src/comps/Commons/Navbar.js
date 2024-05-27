@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { navLinks } from "../../Constants";
 import { Button } from "../Portal";
 import { useState } from "react";
@@ -33,10 +33,10 @@ const Navbar = () => {
                       <span>{item.label}</span>
                     </a>
                   ) : (
-                    <Link to={item.href} className={`navitem`}>
+                    <NavLink to={item.href} className={`navitem`}>
                       <i className={item.icon} />
                       <span>{item.label}</span>
-                    </Link>
+                    </NavLink>
                   )}
                 </li>
               );

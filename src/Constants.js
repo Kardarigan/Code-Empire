@@ -2,26 +2,23 @@ import Persian_Programmer from "./assets/painting_of_an_ancient_Persian_with_sas
 import Persians_Parade from "./assets/persians_parade.jpg";
 
 export const navLinks = [
+  { href: "/blog", label: "بلاگ" },
   {
     href: "/about",
     label: "درباره",
-    icon: "",
   },
   {
     target: "/#services",
     label: "خدمات",
-    icon: "",
   },
   {
-    href: "/methods",
-    label: "روش ها",
-    icon: "",
+    target: "/",
+    label: "دوره ها",
   },
 ];
 
 export const footLinks = [
   { href: "/privacy", label: "قوانین" },
-  { href: "/blog", label: "بلاگ" },
   { href: "/contact", label: "ارتباط باما" },
   { href: "/about", label: "Code Empire © 2024" },
 ];
@@ -146,11 +143,11 @@ export const homeOverall = {
     "همین الان میتونی فرم تماس با ما رو پر کنی تا در نخستین زمان ممکن باهات تماس بگیریم و ماجراجویی رو شروع کنیم!",
   links: [
     {
-      link: "/",
-      label: "تماس کلاسیک",
+      link: "mailto:duckdukstay@hotmail.com",
+      label: "ارسال ایمیل",
     },
     {
-      link: "/",
+      link: "/contact",
       label: "فرم تماس",
     },
   ],
