@@ -15,8 +15,10 @@ import Policy from "../pages/Policy";
 import Hero from "../comps/Commons/Hero";
 import Form from "./Commons/Form";
 import Tip from "./Commons/Tip";
+import Top_Image_Section from "./Commons/Top_Image_Section";
 
 export {
+  Top_Image_Section,
   Form,
   Tip,
   About,
