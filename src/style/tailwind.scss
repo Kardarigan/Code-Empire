@@ -67,6 +67,9 @@
   .label {
     @apply text-slate-700 md:text-sm text-xs font-bold;
   }
+  .para {
+    @apply max-md:text-sm text-justify max-w-[800px];
+  }
 }
 @layer utilities {
   .padding {

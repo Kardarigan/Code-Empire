@@ -20,9 +20,7 @@ const Half = ({ thing, reverse = false }) => {
               {thing.title}
             </span>
           </h1>
-          <p className="max-md:text-sm my-5 text-justify max-w-[500px]">
-            {thing.describe}
-          </p>
+          <p className="my-5 para max-w-[500px]">{thing.describe}</p>
           <Button to="/" label="شروع همکاری" />
         </div>
       </div>

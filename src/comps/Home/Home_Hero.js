@@ -32,7 +32,7 @@ const Home_Hero = () => {
             />
           </p>
           <div className="flex justify-center mt-10">
-            <Button label="ارتباط با امپراطوری" to="/" />
+            <Button label="ارتباط با امپراتوری" to="/" />
           </div>
         </div>
       </div>
