@@ -42,12 +42,12 @@ body {
 }
 .halfbg-right {
   background: linear-gradient(109.6deg, transparent 20%, #874ccc 98%);
-  @apply pr-5;
+  @apply pr-5 rounded-full;
 }
 
 .halfbg-left {
   background: linear-gradient(109deg, #874ccc 20%, transparent 70%);
-  @apply pl-5;
+  @apply pl-5 rounded-full;
 }
 .link {
   @apply transition-all;

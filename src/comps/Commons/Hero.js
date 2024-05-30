@@ -9,7 +9,7 @@ const Hero = ({ title, subtitle, light = false }) => {
       dir="rtl"
     >
       <h1 className={`title-lg ${!light && "text-slate-50"}`}>
-        <span className="halfbg-right rounded-full">{title}</span>
+        <span className="halfbg-right">{title}</span>
       </h1>
       <h3
         className={`font-thin mt-5 ${

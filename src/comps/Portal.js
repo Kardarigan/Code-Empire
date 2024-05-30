@@ -16,8 +16,10 @@ import Hero from "../comps/Commons/Hero";
 import Form from "./Commons/Form";
 import Tip from "./Commons/Tip";
 import Top_Image_Section from "./Commons/Top_Image_Section";
+import Numbers from "./About/Numbers";
 
 export {
+  Numbers,
   Top_Image_Section,
   Form,
   Tip,

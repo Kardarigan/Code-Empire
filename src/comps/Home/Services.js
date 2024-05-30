@@ -6,9 +6,7 @@ const Services = () => {
     <section className="padding-x py-10" dir="rtl" id="services">
       <h2 className="title-super">
         <span className="text-purple-500"># </span>
-        <span className="halfbg-left rounded-full">
-          خدماتی که ما ارایه میدیم
-        </span>
+        <span className="halfbg-left">خدماتی که ما ارایه میدیم</span>
       </h2>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-5 mt-12">
         {homeServices.map((item) => {

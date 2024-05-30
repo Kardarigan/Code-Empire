@@ -15,7 +15,7 @@ const Half = ({ thing, reverse = false }) => {
                 reverse
                   ? "md:translate-x-[-31%] halfbg-left"
                   : "md:translate-x-[31%] halfbg-right"
-              } translate-y-[-150%] md:w-[150%] rounded-full`}
+              } translate-y-[-150%] md:w-[150%]`}
             >
               {thing.title}
             </span>

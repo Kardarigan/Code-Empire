@@ -1,5 +1,8 @@
 import Persian_Programmer from "./assets/painting_of_an_ancient_Persian_with_sassanid_helmet_soldier_while_his_coding_in_his_laptop_png.png";
 import Persians_Parade from "./assets/persians_parade.jpg";
+import Persian_Coder_1 from "./assets/painting_of_an_ancient_Persian_with_sassanid_helmet_soldier_while_his_coding_in_his_laptop_png(1).png";
+import Persian_Coder_2 from "./assets/painting_of_an_ancient_parthian_imperial_philosophers_while_their_coding_in_their_laptop_in_front_perspolis_png.png";
+import Persian_Coder_3 from "./assets/painting_of_an_ancient_Persian_with_sassanid_helmet_thousanse_soldiers_while_their_coding_in_their_laptop_png.png";
 
 export const navLinks = [
   { href: "/blog", label: "بلاگ" },
@@ -185,3 +188,48 @@ export const contactForm = [
     required: true,
   },
 ];
+
+export const about = {
+  job: {
+    title: "امپراتوری چیکار میکنه؟",
+    describe:
+      "همیشه بهترین سایت یا برنامه، اونیه که کمترین و بهینه ترین کد رو داشته باشه. پروژه ای که به دست برنامه نویسان امپراتوری کد ساخته میشه به طور کاملا آشکاری از کمترین و بهینه ترین کد ها در هر زمینه ای استفاده میکنه با این روش که قابل استفاده ترین کد ممکن نوشته میشه. ما در آموزش هامونم به همین شکل به شما برنامه نویسی رو یاد میدیم. همین روشه کد امپایر رو متمایز میکنه!",
+    cover: Persian_Coder_1,
+    overIcon: "#",
+  },
+  reagon: {
+    title: "ما فراتر از سرزیمنمونیم",
+    describe:
+      "همیشه بهترین سایت یا برنامه، اونیه که کمترین و بهینه ترین کد رو داشته باشه. پروژه ای که به دست برنامه نویسان امپراتوری کد ساخته میشه به طور کاملا آشکاری از کمترین و بهینه ترین کد ها در هر زمینه ای استفاده میکنه با این روش که قابل استفاده ترین کد ممکن نوشته میشه. ما در آموزش هامونم به همین شکل به شما برنامه نویسی رو یاد میدیم. همین روشه کد امپایر رو متمایز میکنه!",
+    cover: Persian_Coder_2,
+    overIcon: "#",
+  },
+  numbers: [
+    { number: 30, title: "پروژه موفق" },
+    { number: 50, title: "دانش آموز" },
+    { number: 120, title: "ساعت مشاوره" },
+    { number: 80, title: "ساعت آموزش رایگان" },
+  ],
+  idea: {
+    title: "ایده اصلی ما چیه؟",
+    describe:
+      "همیشه بهترین سایت یا برنامه، اونیه که کمترین و بهینه ترین کد رو داشته باشه. پروژه ای که به دست برنامه نویسان امپراتوری کد ساخته میشه به طور کاملا آشکاری از کمترین و بهینه ترین کد ها در هر زمینه ای استفاده میکنه با این روش که قابل استفاده ترین کد ممکن نوشته میشه. ما در آموزش هامونم به همین شکل به شما برنامه نویسی رو یاد میدیم. همین روشه کد امپایر رو متمایز میکنه!",
+    cover: Persian_Coder_3,
+    overIcon: "#",
+  },
+  overall: {
+    title: "این امپراتوی ماست، امپراتوری ای کد ها و کدزن ها",
+    describe:
+      "همین الان میتونی فرم تماس با ما رو پر کنی تا در نخستین زمان ممکن باهات تماس بگیریم و ماجراجویی رو شروع کنیم!",
+    links: [
+      {
+        link: "mailto:duckdukstay@hotmail.com",
+        label: "ارسال ایمیل",
+      },
+      {
+        link: "/contact",
+        label: "فرم تماس",
+      },
+    ],
+  },
+};

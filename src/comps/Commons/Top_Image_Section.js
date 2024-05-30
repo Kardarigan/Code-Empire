@@ -1,6 +1,6 @@
 const Top_Image_Section = ({ title = null, label = null, describe, cover }) => {
   return (
-    <section className="padding grid gap-y-3">
+    <section className="padding grid gap-y-5" dir="rtl">
       <div>
         <img
           src={cover}
@@ -9,7 +9,11 @@ const Top_Image_Section = ({ title = null, label = null, describe, cover }) => {
         />
         {label && <p className="label">* {label}</p>}
       </div>
-      {title && <h2 className="title">{title}</h2>}
+      {title && (
+        <h2 className="title-lg">
+          <span className="halfbg-left">{title}</span>
+        </h2>
+      )}
       <p className="para">{describe}</p>
     </section>
   );

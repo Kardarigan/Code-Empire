@@ -5,9 +5,7 @@ const Customers = () => {
     <section className="padding-x py-10" dir="rtl">
       <h2 className="title-super">
         <span className="text-purple-500"># </span>
-        <span className="halfbg-left rounded-full">
-          چیز که دیگران دربارمون میگن
-        </span>
+        <span className="halfbg-left">چیز که دیگران دربارمون میگن</span>
       </h2>
       <div className="grid lg:grid-cols-3 mt-24 gap-14">
         {customersReviews.map((item, index) => {
