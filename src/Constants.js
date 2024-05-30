@@ -11,7 +11,7 @@ export const navLinks = [
     label: "درباره",
   },
   {
-    target: "/#services",
+    target: "/service",
     label: "خدمات",
   },
   {

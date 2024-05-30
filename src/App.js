@@ -1,5 +1,13 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { Layout, Home, About, Blog, Policy, Contact } from "./comps/Portal";
+import {
+  Layout,
+  Home,
+  About,
+  Blog,
+  Policy,
+  Contact,
+  Service,
+} from "./comps/Portal";
 
 function App() {
   return (
@@ -10,7 +18,9 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/policy" element={<Policy />} />
+          <Route path="/policy" element={<Policy />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/service" element={<Service />} />
           <Route
             path="*"
             element={

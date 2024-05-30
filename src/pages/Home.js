@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <>
       <Home_Hero />
-      <Services />
+      <Services homepage />
       <Half thing={lessCode} />
       <Half thing={whatWeAre} reverse />
       <Customers />

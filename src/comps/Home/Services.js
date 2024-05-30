@@ -1,7 +1,8 @@
 import { homeServices } from "../../Constants";
 import { Link } from "react-router-dom";
+import { Button } from "../Portal";
 
-const Services = () => {
+const Services = ({ homepage = false }) => {
   return (
     <section className="padding-x py-10" dir="rtl" id="services">
       <h2 className="title-super">
@@ -45,6 +46,11 @@ const Services = () => {
           );
         })}
       </div>
+      {homepage && (
+        <div className="flex-fullcenter mt-12">
+          <Button label="مطالعه بیشتر" to="/service" />
+        </div>
+      )}
     </section>
   );
 };
