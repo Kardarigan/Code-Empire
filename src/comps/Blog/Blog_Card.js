@@ -7,7 +7,7 @@ const Blog_Card = ({ blog }) => {
       className="overflow-hidden rounded-2xl border-4 border-blue-400 group relative"
     >
       <p className="absolute text-end w-full">
-        <span className="bg-white/55 backdrop-blur-sm px-2 py-1 rounded-br-lg">
+        <span className="bg-blue-400 px-2 py-1 rounded-br-lg">
           {blog.category}
         </span>
       </p>
