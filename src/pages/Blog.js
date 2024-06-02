@@ -1,4 +1,5 @@
-import { Blog_Overview, Hero } from "../comps/Portal";
+import { blogOverall } from "../Constants";
+import { Blog_Overview, Hero, Overall } from "../comps/Portal";
 
 const Blog = () => {
   return (
@@ -8,6 +9,7 @@ const Blog = () => {
         subtitle="چه باما کار کنی چه نکنی بد نیست یه نگاهی بهشون بندازی"
       />
       <Blog_Overview />
+      <Overall thing={blogOverall} />
     </>
   );
 };

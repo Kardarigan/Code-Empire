@@ -16,13 +16,13 @@ const Blog_Overview = () => {
             })}
           </select>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1 text-slate-400 font-thin">
           {sortby.map((item, index) => {
             return (
               <>
-                <button className="text-slate-300">{item}</button>
+                <span className="cursor-pointer">{item}</span>
                 {index + 1 < sortby.length && (
-                  <span className="text-slate-300">|</span>
+                  <span className="opacity-50">/</span>
                 )}
               </>
             );

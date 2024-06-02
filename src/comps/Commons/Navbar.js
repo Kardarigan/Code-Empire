@@ -20,7 +20,7 @@ const Navbar = () => {
         >
           <Link to="/">
             <h2 className="text-2xl">
-              امپراتوری <span className="text-red-700">کد</span>
+              امپراتوری <span className="text-blue-400">کد</span>
             </h2>
           </Link>
           <ul className="lg:flex hidden gap-4 ps-4">

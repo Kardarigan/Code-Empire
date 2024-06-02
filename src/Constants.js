@@ -243,3 +243,18 @@ export const categories = [
 ];
 
 export const sortby = ["تازه ترین", "کهنه ترین", "بیشترین پیشنهاد"];
+
+export const blogOverall = {
+  title: "ما چیزایی رو تو این مطالب گفتیم که همه نیاز دارن",
+  describe: "اگه چیزی میخوای که تو مطالب سایت نیست بهتره باهامون تماس بگیری",
+  links: [
+    {
+      link: "mailto:duckdukstay@hotmail.com",
+      label: "ارسال ایمیل",
+    },
+    {
+      link: "/contact",
+      label: "فرم تماس",
+    },
+  ],
+};
