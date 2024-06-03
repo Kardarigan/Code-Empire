@@ -15,7 +15,7 @@ export const navLinks = [
     label: "خدمات",
   },
   {
-    target: "/",
+    target: "/courses",
     label: "دوره ها",
   },
 ];

@@ -7,6 +7,7 @@ import {
   Policy,
   Contact,
   Service,
+  Single_Blog,
 } from "./comps/Portal";
 
 function App() {
@@ -17,10 +18,19 @@ function App() {
           <Route index path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:blog" element={<Single_Blog />} />
           <Route path="/policy" element={<Policy />} />
           <Route path="/policy" element={<Policy />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/service" element={<Service />} />
+          <Route
+            path="/courses"
+            element={
+              <h1 className="size-screen flex-fullcenter text-indigo-400 md:text-8xl text-5xl">
+                ...دوره ها تو راهن
+              </h1>
+            }
+          />
           <Route
             path="*"
             element={

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Blog_Card = ({ blog }) => {
   return (
     <Link
-      to={"/" + blog.title}
+      to={"/blog/" + blog.title}
       className="overflow-hidden rounded-2xl border-4 border-blue-400 group relative"
     >
       <p className="absolute text-end w-full">

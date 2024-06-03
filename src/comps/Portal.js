@@ -20,8 +20,10 @@ import Top_Image_Section from "./Commons/Top_Image_Section";
 import Numbers from "./About/Numbers";
 import Blog_Overview from "./Blog/Blog_Overview";
 import Blog_Card from "./Blog/Blog_Card";
+import Single_Blog from "../pages/Single_Blog";
 
 export {
+  Single_Blog,
   Blog_Overview,
   Blog_Card,
   Service,
