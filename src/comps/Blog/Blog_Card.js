@@ -22,7 +22,7 @@ const Blog_Card = ({ blog }) => {
           {blog.paragraphes[0].paragraphe}
         </p>
         <p className="text-end label absolute p-2 left-0 bottom-0">
-          {blog.uploadData}
+          {blog.upload}
         </p>
       </div>
     </Link>

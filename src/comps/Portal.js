@@ -21,8 +21,12 @@ import Numbers from "./About/Numbers";
 import Blog_Overview from "./Blog/Blog_Overview";
 import Blog_Card from "./Blog/Blog_Card";
 import Single_Blog from "../pages/Single_Blog";
+import Blog_Main from "./Blog/Blog_Main";
+import Blog_Side from "./Blog/Blog_Side";
 
 export {
+  Blog_Side,
+  Blog_Main,
   Single_Blog,
   Blog_Overview,
   Blog_Card,
