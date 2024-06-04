@@ -73,8 +73,11 @@
   .para {
     @apply max-md:text-sm text-justify max-w-[800px];
   }
+  .warn {
+    @apply border-mac bg-blue-400 text-blue-50;
+  }
   .border-mac {
-    @apply border border-blue-400 rounded-[25px] px-4;
+    @apply border-2 border-blue-400 rounded-[25px] px-4;
   }
 }
 @layer utilities {

@@ -258,3 +258,10 @@ export const blogOverall = {
     },
   ],
 };
+
+export const singleBlogOverall = {
+  title: "زمانتو صرف چیزه خوبی کردی!",
+  describe:
+    "مطلب خیلی کاربردیه ولی برای اینکه واقعا کارا باشه باید به کار بگیریش",
+  links: [],
+};

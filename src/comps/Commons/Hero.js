@@ -7,7 +7,7 @@ const Hero = ({ title, subtitle, light = false, background = false }) => {
         background ? "bg-fullcenter" : light ? "bg-slate-50" : "bg-slate-950"
       }`}
       dir="rtl"
-      style={background && { backgroundImage: "url(" + background + ")" }}
+      style={{ backgroundImage: "url(" + background + ")" }}
     >
       <div
         className={`padding-x pt-36 pb-40 ${

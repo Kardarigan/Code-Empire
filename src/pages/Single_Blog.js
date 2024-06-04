@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { blogs } from "../data/Blogs";
-import { Blog_Main, Blog_Side, Hero } from "../comps/Portal";
+import { Blog_Main, Blog_Side, Hero, Overall } from "../comps/Portal";
+import { singleBlogOverall } from "../Constants";
 
 const Single_Blog = () => {
   const { blog } = useParams();
@@ -21,6 +22,7 @@ const Single_Blog = () => {
         <Blog_Main blog={theBlog} />
         <Blog_Side category={theBlog.category} />
       </section>
+      <Overall thing={singleBlogOverall} />
     </>
   );
 };

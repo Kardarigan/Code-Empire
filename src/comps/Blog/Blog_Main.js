@@ -2,9 +2,7 @@ const Blog_Main = ({ blog }) => {
   return (
     <main className="grid gap-y-12 md:col-span-3">
       <div className="flex-seperate border-mac py-3">
-        <span className="border-mac bg-blue-400 text-blue-50">
-          {blog.category}
-        </span>
+        <span className="warn">{blog.category}</span>
         <span>
           <i class="fad fa-calendar text-blue-500 me-1" /> {blog.upload}
         </span>
@@ -16,7 +14,7 @@ const Blog_Main = ({ blog }) => {
       />
       {blog.paragraphes.map((item, index) => {
         return (
-          <div key={index}>
+          <article key={index}>
             <h2 className="title halfbg-left inline">
               <span className="text-purple-500 me-2">#</span>
               {item.title}
@@ -24,7 +22,7 @@ const Blog_Main = ({ blog }) => {
             <p className="text-justify para mt-5 text-slate-700">
               {item.paragraphe}
             </p>
-          </div>
+          </article>
         );
       })}
     </main>
