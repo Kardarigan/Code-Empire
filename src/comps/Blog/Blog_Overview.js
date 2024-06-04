@@ -16,6 +16,19 @@ const Blog_Overview = () => {
     setSerchValue(searchedThing);
   };
 
+  const [sort, setSort] = useState(0);
+  const handleSort = (index) => {
+    setSort(index);
+  };
+
+  const theBlogs = blogs;
+
+  if (sort == 1) {
+    theBlogs = theBlogs.reverse();
+  } else if (sort == 2) {
+    theBlogs = theBlogs.sort((a, b) => a.suggested - b.suggested);
+  }
+
   return (
     <section className="container padding" dir="rtl">
       <div className="flex-seperate mb-5 max-md:flex-col gap-5 border-b border-blue-200 border-opacity-30 pb-3">
@@ -47,11 +60,18 @@ const Blog_Overview = () => {
             className="field allunset bg-transparent"
           />
         </div>
-        <div className="flex items-center gap-1 text-slate-400 font-thin">
+        <div className="flex items-center gap-1 text-slate-400 font-thin select-none">
           {sortby.map((item, index) => {
             return (
               <>
-                <span className="cursor-pointer">{item}</span>
+                <span
+                  className={`cursor-pointer ${
+                    index === sort && "text-blue-600"
+                  }`}
+                  onClick={() => handleSort(index)}
+                >
+                  {item}
+                </span>
                 {index + 1 < sortby.length && (
                   <span className="opacity-50">/</span>
                 )}
@@ -62,7 +82,7 @@ const Blog_Overview = () => {
       </div>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
         {serchValue
-          ? blogs
+          ? theBlogs
               .filter(
                 (item) =>
                   item.title && item.title.toString().includes(serchValue)
@@ -70,7 +90,7 @@ const Blog_Overview = () => {
               .map((item, index) => {
                 return <Blog_Card blog={item} key={index} />;
               })
-          : blogs
+          : theBlogs
               .filter(
                 (item) => category === "همه" || item.category === category
               )

@@ -6,6 +6,7 @@ export const blogs = [
     cover: Freelancer_Cover,
     category: "آموزشی",
     upload: "آبان 1403",
+    suggested: 12,
     paragraphes: [
       {
         title: "ماجرای این فریلنسری چیه؟",
@@ -29,6 +30,7 @@ export const blogs = [
     cover: Freelancer_Cover,
     category: "آموزشی",
     upload: "آبان 1403",
+    suggested: 12,
     paragraphes: [
       {
         title: "ماجرای این فریلنسری چیه؟",
@@ -52,6 +54,7 @@ export const blogs = [
     cover: Freelancer_Cover,
     category: "آموزشی",
     upload: "آبان 1403",
+    suggested: 12,
     paragraphes: [
       {
         title: "ماجرای این فریلنسری چیه؟",
@@ -75,6 +78,7 @@ export const blogs = [
     cover: Freelancer_Cover,
     category: "زندگی شخصی",
     upload: "آبان 1403",
+    suggested: 12,
     paragraphes: [
       {
         title: "ماجرای این فریلنسری چیه؟",
@@ -94,10 +98,11 @@ export const blogs = [
     ],
   },
   {
-    title: "چطوری به یه فریلنسر موفق تبدیل بشیم 3",
+    title: "چطوری به یه فریلنسر موفق تبدیل بشیم 9",
     cover: Freelancer_Cover,
     category: "امپراتوری",
     upload: "آبان 1403",
+    suggested: 3,
     paragraphes: [
       {
         title: "ماجرای این فریلنسری چیه؟",
