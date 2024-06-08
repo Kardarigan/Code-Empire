@@ -5,18 +5,23 @@ import { Blog_Card } from "../Portal";
 
 const Blog_Overview = () => {
   const [category, setCategory] = useState("همه");
+  const [searchValue, setSearchValue] = useState("");
+  const [sort, setSort] = useState(0);
+  const [page, setPage] = useState(1);
+  const blogsPerPage = 9;
+
   const handleCategoryChange = () => {
     let selectedCategory = document.getElementById("category").value;
     setCategory(selectedCategory);
+    setPage(1);
   };
 
-  const [searchValue, setSearchValue] = useState("");
   const handleSearch = () => {
     let searchedThing = document.getElementById("search").value;
     setSearchValue(searchedThing);
+    setPage(1);
   };
 
-  const [sort, setSort] = useState(0);
   const handleSort = (index) => {
     setSort(index);
   };
@@ -43,8 +48,6 @@ const Blog_Overview = () => {
     return sortedBlogs;
   }, [sort, category, searchValue]);
 
-  const [page, setPage] = useState(1);
-  const blogsPerPage = 9;
   const pageCount = Math.ceil(filteredBlogs.length / blogsPerPage);
   const isFirstPage = page === 1;
   const isLastPage = page === pageCount;
@@ -131,11 +134,14 @@ const Blog_Overview = () => {
         ))}
       </div>
       <div className="max-w-[250px] mx-auto text-center mt-12">
-        {category === "همه" ? (
+        {filteredBlogs.length === 0 ? (
+          "مطلبی یافت نشد"
+        ) : (
           <>
             <button
               onClick={handlePrevPage}
-              className={isFirstPage && "opacity-70"}
+              className={isFirstPage ? "opacity-70" : ""}
+              disabled={isFirstPage}
             >
               Prev
             </button>
@@ -154,13 +160,12 @@ const Blog_Overview = () => {
             </select>
             <button
               onClick={handleNextPage}
-              className={isLastPage && "opacity-70"}
+              className={isLastPage ? "opacity-70" : ""}
+              disabled={isLastPage}
             >
               Next
             </button>
           </>
-        ) : (
-          "این همه ی مطالب این دسته بود"
         )}
       </div>
     </section>
