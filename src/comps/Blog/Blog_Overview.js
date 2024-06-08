@@ -84,13 +84,13 @@ const Blog_Overview = () => {
   return (
     <section className="container padding" dir="rtl">
       <div className="flex-seperate mb-5 max-md:flex-col gap-5 border-b border-blue-200 border-opacity-30 pb-3">
-        <div className="flex gap-x-1">
+        <div className="flex items-center gap-x-1 max-md:min-w-full">
           <label htmlFor="category" className="label">
-            دسته بندی :{" "}
+            دسته:{" "}
           </label>
           <select
             id="category"
-            className="select w-[180px]"
+            className="select"
             onChange={handleCategoryChange}
           >
             {categories.map((item, index) => (
@@ -100,20 +100,21 @@ const Blog_Overview = () => {
             ))}
           </select>
         </div>
-        <div className="flex gap-x-3 border-mac rounded bg-blue-400 text-blue-50">
+        <div className="flex py-2 gap-x-3 max-md:min-w-full border-mac rounded-full bg-blue-400 text-blue-50">
           <button onClick={handleSearch}>
             <i className="fas fa-magnifying-glass"></i>
           </button>
           <input
             type="text"
             id="search"
-            className="field allunset bg-transparent"
+            className="allunset field bg-transparent"
           />
         </div>
-        <div className="flex items-center gap-1 text-slate-400 font-thin select-none">
+        <div className="flex-seperate items-center max-md:min-w-full gap-1 text-slate-400 font-thin select-none">
           {sortby.map((item, index) => (
-            <span key={index}>
+            <>
               <span
+                key={index}
                 className={`cursor-pointer ${
                   index === sort && "text-blue-600"
                 }`}
@@ -124,7 +125,7 @@ const Blog_Overview = () => {
               {index + 1 < sortby.length && (
                 <span className="opacity-50">/</span>
               )}
-            </span>
+            </>
           ))}
         </div>
       </div>
@@ -139,11 +140,11 @@ const Blog_Overview = () => {
         ) : (
           <>
             <button
-              onClick={handlePrevPage}
-              className={isFirstPage ? "opacity-70" : ""}
-              disabled={isFirstPage}
+              onClick={handleNextPage}
+              className={isLastPage ? "opacity-70" : ""}
+              disabled={isLastPage}
             >
-              Prev
+              پس
             </button>
             <select
               id="pageSelect"
@@ -159,11 +160,11 @@ const Blog_Overview = () => {
               )}
             </select>
             <button
-              onClick={handleNextPage}
-              className={isLastPage ? "opacity-70" : ""}
-              disabled={isLastPage}
+              onClick={handlePrevPage}
+              className={isFirstPage ? "opacity-70" : ""}
+              disabled={isFirstPage}
             >
-              Next
+              پیش
             </button>
           </>
         )}
