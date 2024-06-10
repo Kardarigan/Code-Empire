@@ -20,7 +20,7 @@ const Blog_Main = ({ blog }) => {
               {item.title}
             </h2>
             <p className="text-justify para mt-5 text-slate-700">
-              {item.paragraphe}
+              {item.paragraph}
             </p>
           </article>
         );

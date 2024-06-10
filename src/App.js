@@ -8,6 +8,7 @@ import {
   Contact,
   Service,
   Single_Blog,
+  Single_Service,
 } from "./comps/Portal";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path="/policy" element={<Policy />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/service" element={<Service />} />
+          <Route path="/service/:service" element={<Single_Service />} />
           <Route
             path="/courses"
             element={

@@ -19,7 +19,7 @@ const Blog_Card = ({ blog }) => {
           {blog.title}
         </h3>
         <p className="line-clamp-2 text-ellipsis text-sm mt-3 displayTrans md:opacity-0 md:invisible md:group-hover:opacity-100 md:group-hover:visible">
-          {blog.paragraphes[0].paragraphe}
+          {blog.paragraphes[0].paragraph}
         </p>
         <p className="text-end label absolute p-2 left-0 bottom-0">
           {blog.upload}

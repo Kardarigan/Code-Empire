@@ -5,7 +5,7 @@ import Policy from "../pages/Policy";
 import Service from "../pages/Service";
 import Home from "../pages/Home";
 import Layout from "./Layout";
-import Services from "./Home/Services";
+import Services from "./Service/Services";
 import Home_Hero from "./Home/Home_Hero";
 import Customers from "./Home/Customers";
 import Overall from "./Commons/Overall";
@@ -23,8 +23,14 @@ import Blog_Card from "./Blog/Blog_Card";
 import Single_Blog from "../pages/Single_Blog";
 import Blog_Main from "./Blog/Blog_Main";
 import Blog_Side from "./Blog/Blog_Side";
+import Single_Service from "../pages/Single_Service";
+import Service_Main from "./Service/Service_Main";
+import Service_Side from "./Service/Service_Side";
 
 export {
+  Service_Main,
+  Service_Side,
+  Single_Service,
   Blog_Side,
   Blog_Main,
   Single_Blog,

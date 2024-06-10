@@ -1,4 +1,4 @@
-import { homeServices } from "../../Constants";
+import { services } from "../../Constants";
 import { Link } from "react-router-dom";
 import { Button } from "../Portal";
 
@@ -10,11 +10,11 @@ const Services = ({ homepage = false }) => {
         <span className="halfbg-left">خدماتی که ما ارایه میدیم</span>
       </h2>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-5 mt-12">
-        {homeServices.map((item) => {
+        {services.map((item) => {
           return (
             <div className="flex-fullcenter" key={item.title}>
               <Link
-                to="/"
+                to={"/service/" + item.path}
                 className="size-full bg-blue-500 border-4 shadow-lg rounded-3xl border-slate-100 transition-all duration-300 backdrop-blur hover:scale-105 flex flex-col justify-between overflow-hidden group"
               >
                 <div className="p-5 relative transition-all text-slate-50">
@@ -27,7 +27,7 @@ const Services = ({ homepage = false }) => {
                   </p>
                 </div>
                 <Link
-                  to="#"
+                  to={"/service/" + item.path}
                   class="relative border-t-4 border-slate-100 inline-flex items-center justify-start py-3 pl-4 pr-12 font-bold text-blue-500 transition-all hover:pl-10 hover:pr-6 bg-slate-100 group/lets"
                 >
                   <span class="absolute bottom-0 left-0 w-full h-0 transition-all duration-150 ease-in-out bg-purple-400 group-hover/lets:h-full"></span>
