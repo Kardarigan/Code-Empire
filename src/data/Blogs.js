@@ -2,7 +2,7 @@ import Freelancer_Cover from "../assets/painting_of_an_ancient_Persian_with_sass
 
 export const blogs = [
   {
-    title: "چطوری به یه فریلنسر موفق تبدیل بشیم",
+    title: "داوش به یه فریلنسر موفق تبدیل بشیم",
     cover: Freelancer_Cover,
     category: "آموزشی",
     upload: "آبان 1403",

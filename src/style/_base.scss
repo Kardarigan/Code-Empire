@@ -46,7 +46,7 @@ body {
 }
 
 .halfbg-left {
-  background: linear-gradient(109deg, #874ccc 20%, transparent 70%);
+  background: linear-gradient(109deg, #874ccc -20%, transparent 70%);
   @apply pl-5 rounded-full;
 }
 .link {

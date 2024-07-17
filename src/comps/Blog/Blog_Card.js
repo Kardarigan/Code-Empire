@@ -12,7 +12,7 @@ const Blog_Card = ({ blog }) => {
         </span>
       </p>
       <div className="h-[300px] w-full">
-        <img src={blog.cover} alt={blog.title} className=" bg-fullobject" />
+        <img src={blog.cover} alt={blog.title} className="bg-fullobject" />
       </div>
       <div className="px-3 py-1 md:h-24 absolute bottom-0 md:group-hover:h-32 h-32 transition-all bg-white/55 backdrop-blur-sm rounded-t-lg">
         <h3 className="md:text-3xl text-xl flex items-center transition-all md:group-hover:text-xl">
