@@ -1,3 +1,5 @@
+import { Accordion } from "../Portal";
+
 const Blog_Main = ({ blog }) => {
   return (
     <main className="grid gap-y-12 md:col-span-3">
@@ -25,6 +27,18 @@ const Blog_Main = ({ blog }) => {
           </article>
         );
       })}
+      <section className="grid gap-y-3">
+        <h2 className="title mb-3">ممکنه از خودت بپرسی: </h2>
+        {blog.faq?.map((item, index) => {
+          return (
+            <Accordion
+              key={index}
+              label={item.label}
+              describe={item.describe}
+            />
+          );
+        })}
+      </section>
     </main>
   );
 };

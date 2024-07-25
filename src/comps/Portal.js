@@ -26,8 +26,10 @@ import Blog_Side from "./Blog/Blog_Side";
 import Single_Service from "../pages/Single_Service";
 import Service_Main from "./Service/Service_Main";
 import Service_Side from "./Service/Service_Side";
+import Accordion from "./Commons/Accordion";
 
 export {
+  Accordion,
   Service_Main,
   Service_Side,
   Single_Service,
