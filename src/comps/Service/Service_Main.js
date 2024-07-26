@@ -14,7 +14,7 @@ const Service_Main = ({ service }) => {
         return (
           <article key={index}>
             <h2 className="title halfbg-left inline">
-              <span className="text-purple-500 me-2">#</span>
+              <i class="fa-solid fa-hashtag text-purple-500 me-2" />
               {item.title}
             </h2>
             <p className="text-justify para mt-5 text-slate-700">

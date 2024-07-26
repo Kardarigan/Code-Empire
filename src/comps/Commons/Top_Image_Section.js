@@ -11,7 +11,8 @@ const Top_Image_Section = ({ title = null, label = null, describe, cover }) => {
       </div>
       {title && (
         <h2 className="title-lg">
-          <span className="halfbg-left">{title}</span>
+          <i class="fa-solid fa-hashtag text-purple-500" />
+          <span className="halfbg-left"> {title}</span>
         </h2>
       )}
       <p className="para">{describe}</p>

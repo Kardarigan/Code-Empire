@@ -47,10 +47,10 @@ const Half = ({ thing, reverse = false }) => {
         {thing.overIcon && (
           <span
             className={`absolute max-md:hidden text-purple-500 ${
-              reverse ? "translate-x-[20%]" : "translate-x-[720%]"
+              reverse ? "translate-x-[20%]" : "translate-x-[430%]"
             } translate-y-[-150%] md:text-9xl hover:rotate-180 transition-all`}
           >
-            {thing.overIcon}
+            <i class="fa-solid fa-hashtag" />
           </span>
         )}
       </div>

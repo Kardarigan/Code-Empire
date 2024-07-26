@@ -9,7 +9,9 @@ const Blog_Side = () => {
   return (
     <aside className="flex flex-col gap-y-5">
       <div className="border-mac pt-2 pb-5">
-        <h4 className="title"># آخرین مطالب</h4>
+        <h4 className="title">
+          <i class="fa-solid fa-hashtag"></i> آخرین مطالب
+        </h4>
         <div className="grid gap-y-5 my-8">
           {latestBlogs.map((item, index) => {
             return (
