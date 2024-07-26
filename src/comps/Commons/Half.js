@@ -8,12 +8,12 @@ const Half = ({ thing, reverse = false }) => {
       }`}
     >
       <div className="md:w-1/2 flex-fullcenter z-10">
-        <div dir={reverse ? "ltr" : "rtl"}>
+        <div dir="rtl" className={reverse ? "text-end" : ""}>
           <h1 className="title-super font-bold relative max-md:px-2">
             <span
               className={`absolute max-md:text-slate-50 ${
                 reverse
-                  ? "md:translate-x-[-31%] halfbg-left"
+                  ? "md:translate-x-[76%] halfbg-left"
                   : "md:translate-x-[31%] halfbg-right"
               } translate-y-[-150%] md:w-[150%]`}
             >
